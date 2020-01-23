@@ -42,7 +42,7 @@
             this.txtTrips.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtTrips.Name = "txtTrips";
             this.txtTrips.Size = new System.Drawing.Size(155, 36);
-            this.txtTrips.TabIndex = 1;
+            this.txtTrips.TabIndex = 0;
             this.txtTrips.TextChanged += new System.EventHandler(this.txtTrips_TextChanged);
             // 
             // txtTotal
@@ -53,6 +53,7 @@
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(155, 36);
             this.txtTotal.TabIndex = 2;
+            this.txtTotal.TabStop = false;
             this.txtTotal.TextChanged += new System.EventHandler(this.txtTotal_TextChanged);
             // 
             // label1
@@ -80,7 +81,7 @@
             this.btnCalculate.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(155, 42);
-            this.btnCalculate.TabIndex = 5;
+            this.btnCalculate.TabIndex = 1;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click_1);
@@ -91,13 +92,15 @@
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(155, 42);
-            this.btnExit.TabIndex = 6;
+            this.btnExit.TabIndex = 2;
+            this.btnExit.TabStop = false;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FormBus
             // 
+            this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
